@@ -1,0 +1,420 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #05152a; /* Color de fondo suave */
+}
+
+/* Sección de introducción */
+.intro-section {
+    background-color: #e6f2ff; /* Azul claro suave */
+    padding: 60px 20px;
+    text-align: center;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 20 40px 80px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.intro-title {
+    font-size: 2.5em;
+    color: #005f99; /* Azul suave */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Estilo de fuente moderno */
+}
+
+.intro-quote {
+    font-size: 1.8em;
+    font-style: italic;
+    color: #00334d; /* Un azul más oscuro para contrastar */
+    margin-bottom: 0;
+    font-family: 'Georgia', serif; /* Fuente serif para diferenciar de la parte principal */
+}
+
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 2em;
+    }
+
+    .intro-quote {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Hero Section con imagen de fondo */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/fondo.png'); /* Cambia por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    align-items: center;  /* Para centrar verticalmente el texto */
+    justify-content: center;  /* Para centrar horizontalmente el texto */
+    overflow: hidden; /* Evitar que se desborde contenido */
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    font-size: 1.5rem;  /* Ajusta el tamaño del texto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}
+
+.tagline {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 2em;
+    color: #dcdcdc;
+}
+
+/* Relojes */
+.clock-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 600;
+}
+
+.clock-img{
+    border-radius: 10px;
+    padding: 3px;
+
+}
+
+
+/* Efecto de texto cubriendo la imagen */
+.main-content {
+    position: relative;
+    z-index: 2;
+    padding: 100px 50px;
+    font-family: 'Roboto', sans-serif; /* Fuente más moderna */
+    font-size: 1.3em; /* Tamaño de letra mayor */
+    border-top: 2px solid #cedef6;
+    border-bottom: 2px solid #b3d1ff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para diferenciar del fondo */
+    border-radius: 10px; /* Bordes redondeados para un efecto suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    margin: 20px auto;
+    margin-left:40px;
+    margin-right: 40px;
+}
+
+.img-text{
+    width:30%;
+    float: right; /* Hace que la imagen flote a la izquierda */
+    margin-right: 15px; /* Añade espacio a la derecha de la imagen */
+    margin-left: 15px;
+    margin-bottom: 10px; /* Añade espacio debajo de la imagen */
+    border-radius: 8px; /* Añade bordes redondeados a la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra suave */
+
+}
+
+.blog-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #005f99; /* Azul suave */
+    font-weight: bold;
+}
+
+.blog-text {
+    font-size: 1.5em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Cuando el usuario hace scroll, el contenido aparece */
+body.scrolled .main-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Asegura que todo el contenido sea responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .clock-container {
+        flex-direction: column;
+    }
+
+    .main-content {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+.weekly-recommendations {
+    background-color: #103455; /* Azul oscuro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    display: flex;
+    flex-direction:space-around; /* Cambiar a columna por defecto para pantallas pequeñas */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.weekly-title{
+    text-align: center;
+    border-radius: 8px;
+    padding-top: 20px;
+    
+}
+
+.weekly-recommendations h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+iframe{
+    height: 280px;
+    width: 600px;
+}
+
+.recommendation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+.recommendation h3 {
+    font-size: 20px;
+    color: #003399;
+    margin-bottom: 10px;
+}
+
+.recommendation-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+}
+
+.recommendation-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.recommendation strong {
+    color: #003366;
+}
+
+@media (max-width: 975px) {
+    .weekly-recommendations {
+        flex-direction: column; /* Columnas en pantallas más pequeñas */
+        align-items: center; /* Centra todo el contenido */
+    }
+
+    .recommendation {
+        flex-direction: column; /* Las recomendaciones se apilan en columna */
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .recommendation-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100px;
+        height: 100px; /* Ajusta el tamaño de las imágenes */
+    }
+
+    .recommendation h3 {
+        font-size: 18px;
+    }
+
+    .recommendation-text {
+        font-size: 14px;
+    }
+
+    
+}
+
+/* Media queries para pantallas muy pequeñas (moviles) */
+@media (max-width: 480px) {
+    .weekly-recommendations h2 {
+        font-size: 20px;
+    }
+
+    .recommendation h3 {
+        font-size: 16px;
+    }
+
+    .recommendation-text {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* Estilos generales para el contenedor de las noticias */
+.news-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #103455; /* Fondo azul claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+}
+
+/* Contenedor de las noticias individuales */
+.container-noticias {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Cada noticia en el carrusel */
+.carousel-item {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para destacar la noticia al pasar el ratón */
+.carousel-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos de las imágenes de las noticias */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #b3e5fc; /* Borde estético */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de los títulos de las noticias */
+.carousel-item #title, .carousel-item #title2, .carousel-item #title3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00796b; /* Color verde oscuro */
+    margin-top: 10px;
+}
+
+/* Estilo del enlace */
+.carousel-item a {
+    text-decoration: none;
+    color: #0288d1; /* Color azul del enlace */
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #b6dae9; /* Color de fondo pastel azul */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centrar contenido */
+    border-top: 2px solid #2e6e8c; /* Línea superior más oscura */
+    margin-top: 15px; /* Margen superior */
+}
+
+footer ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0; /* Quitar padding por defecto */
+    margin: 0; /* Quitar margen por defecto */
+}
+
+footer li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Espacio entre elementos de la lista */
+}
+
+footer a {
+    text-decoration: none; /* Quitar subrayado */
+}
+
+footer img.footer-icon {
+    width: 40px; /* Ajustar el tamaño de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+    border-radius: 10px;
+}
+
+footer img.footer-icon:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+
+/* Asegura que todo el contenido sea responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .clock-container {
+        flex-direction: column;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
