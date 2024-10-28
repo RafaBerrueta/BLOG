@@ -1,8 +1,6 @@
-let url = "https://newsapi.org/v2/everything?q=technology&apiKey=44eb8057a79944c084c245c2a64a7eab";
 
-let req = new Request(url);
 
-fetch(req)
+fetch("https://newsapi.org/v2/everything?q=technology&apiKey=44eb8057a79944c084c245c2a64a7eab";)
     .then(function(response) {
         return response.json();  // Parsear la respuesta JSON
     })
