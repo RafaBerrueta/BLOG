@@ -418,3 +418,9 @@ footer img.footer-icon:hover {
         padding: 20px;
     }
 }
+
+/* Deja de usar esta propiedad */
+-ms-high-contrast-adjust: none;
+
+/* Usa esta propiedad en su lugar */
+forced-color-adjust: none;
