@@ -35,7 +35,7 @@ body {
 
 .intro-quote {
     font-size: 1.8em;
-    font-style: italic;
+    font-style:italic;
     color: #00334d; /* Un azul más oscuro para contrastar */
     margin-bottom: 0;
     font-family: 'Georgia', serif; /* Fuente serif para diferenciar de la parte principal */
@@ -81,7 +81,10 @@ body {
 h1 {
     font-size: 2em;
     margin-bottom: 0.5em;
-    color: #ffffff;
+    color: #fbfbfb;
+    background-color: #6d6a6a67;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .tagline {
@@ -183,6 +186,9 @@ body.scrolled .main-content {
         padding: 20px;
         font-size: 1.2em;
     }
+    .title{
+        font-size: 0.5em;
+    }
 }
 
 
@@ -250,7 +256,7 @@ iframe{
     color: #003366;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 1110px) {
     .weekly-recommendations {
         flex-direction: column; /* Columnas en pantallas más pequeñas */
         align-items: center; /* Centra todo el contenido */
@@ -277,6 +283,14 @@ iframe{
         font-size: 14px;
     }
 
+    iframe{
+        width: 300px;
+    }
+
+    .title{
+        font-size: 0.5em;
+    }
+
     
 }
 
@@ -292,6 +306,14 @@ iframe{
 
     .recommendation-text {
         font-size: 12px;
+    }
+    .recommendation{
+        width: 50%;
+    }
+
+    iframe{
+        width: 300px;
+        height: 280px;
     }
 }
 
@@ -417,8 +439,132 @@ footer img.footer-icon:hover {
     .main-content {
         padding: 20px;
     }
+
+    iframe{
+        width: 300px;
+        height: 280px;
+    }
 }
 
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 1.8em;
+    }
+
+    .intro-quote {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .main-content {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .weekly-recommendations h2 {
+        font-size: 0.5em;
+    }
+
+    .recommendation {
+        font-size: 0.4em;
+    }
+
+    footer {
+        font-size: 0.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-title {
+        font-size: 1.6em;
+    }
+
+    .content {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    .clock-container {
+        flex-direction: column;
+    }
+
+    .blog-title {
+        font-size: 2em;
+    }
+
+    .img-text {
+        width: 100%;
+        float: none;
+        margin: 5px 0;
+    }
+
+    
+}
+
+@media (max-width: 415px) {
+    .intro-title {
+        font-size: 1.6em;
+    }
+
+    .content {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    .clock-container {
+        flex-direction: column;
+    }
+
+    .blog-title {
+        font-size: 2em;
+    }
+
+    .img-text {
+        width: 100%;
+        float: none;
+        margin: 5px 0;
+    }
+
+    
+}
+
+@media (max-width: 435px) {
+    .container-noticias {
+      display: flex;
+      flex-direction: column; /* Hace que los elementos se apilen uno encima del otro */
+      font-size: 14px; /* Ajusta el tamaño de la fuente para hacerlo más pequeño */
+      align-items: center;
+      width: 100%;
+    }
+  
+    .carousel-item {
+      margin-bottom: 20px; /* Espaciado entre cada noticia */
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 16px; /* Tamaño de fuente para los títulos */
+    }
+  
+    .container-noticias.img {
+      width: 100%; /* Asegura que la imagen se ajuste al ancho de la pantalla */
+      height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .weekly-title{
+        font-size: 36px;
+        margin: 40px;
+    }
+
+    
+  }
 /* Deja de usar esta propiedad */
 -ms-high-contrast-adjust: none;
 
